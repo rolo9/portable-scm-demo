@@ -1,0 +1,40 @@
+{
+    "portable_scm_contract_version": "0.1",
+    "sample_data_classification": "synthetic",
+    "run_parameters": {
+        "actual_report_period": "2025-03",
+        "projected_endpoint": "2025-05",
+        "previous_planning_as_of_month": "2025-01",
+        "current_planning_as_of_month": "2025-03",
+        "forecast_horizon_months": 1,
+        "projected_valuation_basis_id": "STANDARD-2025",
+        "top_n": 5
+    },
+    "input_validation": {
+        "status": "PASS",
+        "row_counts": {
+            "inventory_actual": 26,
+            "demand_forecast": 71,
+            "shipment_actual": 1,
+            "supply_plan": 70,
+            "inventory_movement_actual": 1,
+            "inventory_policy": 1,
+            "projected_valuation_basis": 12
+        }
+    },
+    "execution_status": {
+        "build_009_foundation": "PASS",
+        "build_010_actual_inventory_change": "PASS",
+        "build_011_projected_inventory_value": "PASS",
+        "packaging": "PASS"
+    },
+    "output_set": [
+        "actual_inventory_change.csv",
+        "projected_inventory_value_portfolio.csv",
+        "report.md",
+        "run_manifest.json"
+    ],
+    "portable_mvp_readiness": "PASS",
+    "hold_conditions": [],
+    "readiness_scope": "TECHNICAL_READINESS_ONLY_NOT_COMPANY_PILOT_AUTHORIZATION"
+}
