@@ -1,8 +1,8 @@
 {
-  "distribution_version": "portable-scm-v0.1-demo.1",
+  "distribution_version": "portable-scm-v0.1-demo.2",
   "portable_scm_contract_version": "0.1",
   "source_of_truth_repository": "private / not distributed",
-  "source_of_truth_commit": "4d8172a7fe10811813f2733ca343a4af91dd7eae",
+  "source_of_truth_commit": "d4104a86113fd866fcfcaf7a34d9bb93cdaa59e3",
   "publication_model": "one-way curated distribution",
   "sample_data_classification": "synthetic"
 }

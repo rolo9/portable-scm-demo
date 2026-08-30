@@ -1,0 +1,17 @@
+{
+    "analysis_output": "projected_inventory_actualization_detail.csv",
+    "run_identity": {
+        "implementation_commit": "d4104a86113fd866fcfcaf7a34d9bb93cdaa59e3",
+        "implementation_scope": "capabilities/scm-inventory-analysis",
+        "canonical_input_sha256": {
+            "inventory_actual.csv": "725ac2cebb4bdd1bd8e14e8e31cd814fed1f91b111fd32c3787915fc699e63f1",
+            "demand_forecast.csv": "36023ed901e5c8267ebd8f90aaad148cc5c92d43a21550a8aed986a8f811aa0b",
+            "shipment_actual.csv": "5eb3819211742801ae4e1f646bf5dc51f797eced0b315244cc3d09e3470103a9",
+            "supply_plan.csv": "d2fdd0f7c074cbdf83a0987aeed9df2998190cdada8e006a3d10a218ee3884db",
+            "inventory_movement_actual.csv": "06de20694bfcecc9e40f58cd0d8de06416e539ff16ac37a31dd74c4c4cd37c5c",
+            "inventory_policy.csv": "aa58c77fd5cfb61771399090497db060aee2d1565ec2a0d9c569af8c602018ca",
+            "projected_valuation_basis.csv": "a88d8295561f751cad0fc6f956226877d5878e9f5714ac9bb46913bc02ae47c9"
+        },
+        "run_config_sha256": "43e623d32e57d606e8ac233b2edd17346f891cf06d2902f40d01f036047bcdec"
+    }
+}

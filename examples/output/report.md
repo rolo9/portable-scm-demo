@@ -7,13 +7,13 @@ This report is a deterministic projection of the Build #010 and Build #011 struc
 | Field | Value |
 | --- | --- |
 | Portable SCM contract version | 0.1 |
-| Actual report period | 2025-03 |
-| Projected endpoint | 2025-05 |
-| Previous planning as-of | 2025-01 |
-| Current planning as-of | 2025-03 |
+| Actual report period | 2025-08 |
+| Projected endpoint | 2025-10 |
+| Previous planning as-of | 2025-07 |
+| Current planning as-of | 2025-08 |
 | Forecast horizon months | 1 |
 | Projected valuation basis ID | STANDARD-2025 |
-| Top N | 5 |
+| Top N | 10 |
 | Canonical validation | PASS |
 | Build #010 execution | PASS |
 | Build #011 execution | PASS |
@@ -21,40 +21,26 @@ This report is a deterministic projection of the Build #010 and Build #011 struc
 
 ## Actual Inventory Value — Increase Top-N
 
-| rank |  item_code  | prior_inventory_quantity | current_inventory_quantity | prior_inventory_value | current_inventory_value | actual_value_change | quantity_effect | unit_cost_effect | value_reconciliation_residual | target_directional_state | forecast_comparison_status | receipt_quantity | shipment_quantity | disposal_expiry_quantity | reconciliation_residual_quantity | movement_reconciliation_status |
-|------|-------------|--------------------------|----------------------------|-----------------------|-------------------------|---------------------|-----------------|------------------|-------------------------------|--------------------------|----------------------------|------------------|-------------------|--------------------------|----------------------------------|--------------------------------|
-| 1    | SYN-B12-ACT | 100.0                    | 120.0                      | 1000.0                | 1200.0                  | 200.0               | 200.0           | 0.0              | 0.0                           | NO_POLICY_BASIS          | COMPARABLE                 | 70.0             | 50.0              | 0.0                      | 0.0                              | RECONCILED                     |
 
 ## Actual Inventory Value — Decrease Top-N
 
+| rank | item_code | prior_inventory_quantity | current_inventory_quantity | prior_inventory_value | current_inventory_value | actual_value_change | quantity_effect | unit_cost_effect | value_reconciliation_residual | target_directional_state | forecast_comparison_status | receipt_quantity | shipment_quantity | disposal_expiry_quantity | reconciliation_residual_quantity | movement_reconciliation_status |
+|------|-----------|--------------------------|----------------------------|-----------------------|-------------------------|---------------------|-----------------|------------------|-------------------------------|--------------------------|----------------------------|------------------|-------------------|--------------------------|----------------------------------|--------------------------------|
+| 1    | SYN-002   | 200.0                    | 160.0                      | 2400.0                | 1920.0                  | -480.0              | -480.0          | 0.0              | 0.0                           | NO_POLICY_BASIS          | NO_COMPARISON_BASIS        | 0.0              | 50.0              | 10.0                     | 20.0                             | UNRECONCILED                   |
+| 2    | SYN-001   | 400.0                    | 390.0                      | 4000.0                | 3900.0                  | -100.0              | -100.0          | 0.0              | 0.0                           | NO_POLICY_BASIS          | COMPARABLE                 | 40.0             | 50.0              | 0.0                      | 0.0                              | RECONCILED                     |
 
 ## Projected Inventory Value — Increase Top-N
 
-| rank |   item_code    | previous_projected_ending_inventory_quantity | current_projected_ending_inventory_quantity | projected_quantity_revision | fixed_valuation_unit_cost | previous_projected_inventory_value | current_projected_inventory_value | projected_inventory_value_revision | actualization_effect_value | supply_revision_effect_value | demand_revision_effect_value | represented_revision_value | value_residual |
-|------|----------------|----------------------------------------------|---------------------------------------------|-----------------------------|---------------------------|------------------------------------|-----------------------------------|------------------------------------|----------------------------|------------------------------|------------------------------|----------------------------|----------------|
-| 1    | SYN-BRIDGE     | 100.0                                        | 129.0                                       | 29.0                        | 100.0                     | 10000.0                            | 12900.0                           | 2900.0                             | 1500.0                     | 1000.0                       | 400.0                        | 2900.0                     | 0.0            |
-| 2    | SYN-HIGH-VALUE | 100.0                                        | 105.0                                       | 5.0                         | 100.0                     | 10000.0                            | 10500.0                           | 500.0                              | 500.0                      | 0.0                          | 0.0                          | 500.0                      | 0.0            |
-| 3    | SYN-QTY-LARGE  | 100.0                                        | 120.0                                       | 20.0                        | 10.0                      | 1000.0                             | 1200.0                            | 200.0                              | 200.0                      | 0.0                          | 0.0                          | 200.0                      | 0.0            |
-| 4    | SYN-TIE-A      | 100.0                                        | 105.0                                       | 5.0                         | 40.0                      | 4000.0                             | 4200.0                            | 200.0                              | 200.0                      | 0.0                          | 0.0                          | 200.0                      | 0.0            |
-| 5    | SYN-TIE-B      | 100.0                                        | 105.0                                       | 5.0                         | 40.0                      | 4000.0                             | 4200.0                            | 200.0                              | 200.0                      | 0.0                          | 0.0                          | 200.0                      | 0.0            |
 
 ## Projected Inventory Value — Decrease Top-N
 
-| rank |   item_code   | previous_projected_ending_inventory_quantity | current_projected_ending_inventory_quantity | projected_quantity_revision | fixed_valuation_unit_cost | previous_projected_inventory_value | current_projected_inventory_value | projected_inventory_value_revision | actualization_effect_value | supply_revision_effect_value | demand_revision_effect_value | represented_revision_value | value_residual |
-|------|---------------|----------------------------------------------|---------------------------------------------|-----------------------------|---------------------------|------------------------------------|-----------------------------------|------------------------------------|----------------------------|------------------------------|------------------------------|----------------------------|----------------|
-| 1    | SYN-DEC-HIGH  | 100.0                                        | 95.0                                        | -5.0                        | 100.0                     | 10000.0                            | 9500.0                            | -500.0                             | -500.0                     | 0.0                          | 0.0                          | -500.0                     | 0.0            |
-| 2    | SYN-DEC-LARGE | 100.0                                        | 80.0                                        | -20.0                       | 10.0                      | 1000.0                             | 800.0                             | -200.0                             | -200.0                     | 0.0                          | 0.0                          | -200.0                     | 0.0            |
 
 ## Projected Items Without Comparison Basis
 
-|       item_code        |  comparison_status  | projected_endpoint | previous_planning_as_of_month | current_planning_as_of_month | valuation_basis_id |
-|------------------------|---------------------|--------------------|-------------------------------|------------------------------|--------------------|
-| SYN-B12-ACT            | NO_COMPARISON_BASIS | 2025-05            | 2025-01                       | 2025-03                      | STANDARD-2025      |
-| SYN-MISS-BASIS         | NO_COMPARISON_BASIS | 2025-05            | 2025-01                       | 2025-03                      | STANDARD-2025      |
-| SYN-MISS-CURR-FORECAST | NO_COMPARISON_BASIS | 2025-05            | 2025-01                       | 2025-03                      | STANDARD-2025      |
-| SYN-MISS-CURR-SUPPLY   | NO_COMPARISON_BASIS | 2025-05            | 2025-01                       | 2025-03                      | STANDARD-2025      |
-| SYN-MISS-PREV-FORECAST | NO_COMPARISON_BASIS | 2025-05            | 2025-01                       | 2025-03                      | STANDARD-2025      |
-| SYN-MISS-PREV-SUPPLY   | NO_COMPARISON_BASIS | 2025-05            | 2025-01                       | 2025-03                      | STANDARD-2025      |
+| item_code |  comparison_status  | projected_endpoint | previous_planning_as_of_month | current_planning_as_of_month | valuation_basis_id |
+|-----------|---------------------|--------------------|-------------------------------|------------------------------|--------------------|
+| SYN-001   | NO_COMPARISON_BASIS | 2025-10            | 2025-07                       | 2025-08                      | STANDARD-2025      |
+| SYN-002   | NO_COMPARISON_BASIS | 2025-10            | 2025-07                       | 2025-08                      | STANDARD-2025      |
 
 ## Technical Readiness
 

@@ -1,0 +1,3 @@
+item_code,comparison_status,previous_planning_as_of_month,current_planning_as_of_month,actualization_effect_quantity,previous_boundary_planned_supply_quantity,realized_receipt_quantity,realized_supply_difference_quantity,previous_boundary_forecast_demand_quantity,realized_shipment_quantity,realized_demand_shipment_difference_quantity,disposal_expiry_quantity,transfer_in_quantity,transfer_out_quantity,adjustment_in_quantity,adjustment_out_quantity,identified_non_shipment_movement_effect_quantity,represented_actualization_detail_quantity,actualization_detail_residual_quantity
+SYN-001,NO_COMPARISON_BASIS,2025-07,2025-08,,,,,,,,,,,,,,,
+SYN-002,NO_COMPARISON_BASIS,2025-07,2025-08,,,,,,,,,,,,,,,

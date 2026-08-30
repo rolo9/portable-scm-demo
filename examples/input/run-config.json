@@ -1,9 +1,10 @@
 {
   "portable_scm_contract_version": "0.1",
-  "actual_report_period": "2025-03",
-  "projected_endpoint": "2025-05",
-  "previous_planning_as_of_month": "2025-01",
-  "current_planning_as_of_month": "2025-03",
+  "actual_report_period": "2025-08",
+  "projected_endpoint": "2025-10",
+  "previous_planning_as_of_month": "2025-07",
+  "current_planning_as_of_month": "2025-08",
+  "forecast_horizon_months": 1,
   "projected_valuation_basis_id": "STANDARD-2025",
-  "top_n": 5
+  "top_n": 10
 }

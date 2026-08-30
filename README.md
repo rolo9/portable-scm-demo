@@ -1,25 +1,40 @@
-# Portable SCM v0.1 Demo Distribution
+# Portable SCM Demo Distribution
 
-This is a non-authoritative, one-way curated distribution snapshot. The private source-of-truth repository remains the only development and governance authority. Updates flow only from an explicitly accepted private commit into a newly reviewed distribution; edits to a distributed copy never flow upstream automatically.
+This tree is a non-authoritative, one-way distribution snapshot of Portable
+SCM contract version 0.1. The private development repository remains the sole
+source of truth. Changes to this distribution do not flow upstream and must
+not be treated as authoritative product changes.
 
-## Scope
+The portable boundary is:
 
-The portable architecture is:
+`Company Source -> Company Adapter -> 7 Canonical Facts + run-config -> Portable Deterministic Analytics -> Structured Results -> Human-readable Report -> optional LLM Interpretation / Q&A`
 
-`Company Source → Company Adapter → 7 Canonical Facts + run-config → Portable Deterministic Analytics → Structured Results → Human-readable Report → optional interpretation / Q&A`
+All example inputs and outputs in this tree are synthetic. Do not place real
+or company-specific data, mappings, paths, credentials, or connector settings
+in this repository.
 
-This snapshot contains only the canonical contract, one synthetic example input set, and outputs generated from that example. It contains no executable Core. All example `item_code` values beginning with `SYN-` are wholly synthetic; they are not real, anonymized, or transformed company data.
+## Contents
 
-Use this distribution as a read-only reference. Real data, source mappings, canonicalized company files, execution outputs, and evidence must remain inside the approved company-controlled environment. No credentials belong in this distribution.
+- `contract/README.md` defines the seven canonical datasets, `run-config`,
+  validation and missing-data semantics, output meanings, and the boundary
+  between portable and company-specific responsibilities.
+- `examples/input/` contains one synthetic canonical input set.
+- `examples/output/` contains deterministic results generated from those exact
+  input bytes by the accepted private implementation recorded in
+  `DISTRIBUTION.json` and the sample manifests.
 
-## Authority and version
+The CSV outputs are the machine-readable sources of truth. `report.md` is only
+a deterministic human-readable projection; it introduces no new calculation,
+classification, policy, or causality.
 
-[`DISTRIBUTION.json`](DISTRIBUTION.json) identifies the distribution, contract version, and accepted private Source commit used to produce the sample. If distributed semantics conflict with an accepted private Source, the accepted private Source wins and this snapshot is stale pending a new reviewed distribution.
+## Use boundary
 
-## Adapter boundary
+This distribution is designed as a read-only contract and mapping reference.
+Any actual execution, real source data, company mappings, canonicalized company
+files, outputs, and local evidence must remain inside an independently
+authorized company-controlled environment. Technical readiness in the sample
+manifest is not authorization to begin a pilot.
 
-The Portable / Generic side owns canonical filenames, schemas, grains, validation and normalization, run configuration, deterministic analytical semantics, structured-output meaning, and generic report semantics.
-
-The Company Adapter remains outside this distribution. It owns company source discovery, workbook/sheet/column and file conventions, source quirks, source-to-canonical mapping, proprietary cost retrieval, REPORTED/CALCULATED fact construction, confidential paths and values, and runtime-specific wiring. No Company Adapter is implemented here.
-
-See [`contract/README.md`](contract/README.md) for the complete public contract and [`examples/input`](examples/input) / [`examples/output`](examples/output) for the synthetic example.
+Repository access, if separately authorized later, should be least-privilege
+read-only access to this distribution alone. Never store a token or credential
+in this tree.
